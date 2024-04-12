@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,8 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
       rel="stylesheet"
     />
 
@@ -18,125 +26,150 @@
     <title>Ogrody</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo__link"
-        ><img src="./images/logo.png" alt="logo icon" class="logo__img" />
-      </a>
-      <nav class="nav">
-        <ul>
-          <li class="nav__item"><a href="#" class="nav__link">o nas</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">oferta</a></li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">realizacje</a>
-          </li>
-          <li class="nav__item"><a href="#" class="nav__link">kontakt</a></li>
-        </ul>
-      </nav>
-      <button class="btn__mobile-nav">
-        <img
-          src="./images/icon-menu.svg"
-          alt="hamburger menu icon"
-          class="icon-menu"
-        />
-      </button>
-    </header>
-
-    <main class="container">
-      <section class="hero">
-        <h1 class="hero__title">
-          Stwórz z nami swoją wymarzoną zieloną przestrzeń
-        </h1>
-      </section>
-
-      <!-- ABOUT COMPANY -->
-      <section>
-        <div>
-          <h3>
-            Jesteśmy firmą działającą na terenie wielkopolski od 2004 roku.
-          </h3>
-          <article class="numbers__container">
-            <div class="num__box">
-              <div class="num__circle">
-                <p class="num__circle-number">1100</p>
-              </div>
-              <p class="num__circle-desc">zadowolonych klientów</p>
+    <div class="main-container">
+      <!-- FIRST 100VH  -->
+      <div class="bg-container">
+        <!-- HEADER -->
+        <header class="header">
+          <a href="#" class="logo__link">
+            <div class="logo-box">
+              <img
+                src="./images/logo-trawa.png"
+                alt="logo icon"
+                class="comp-logo"
+              />
+              <h2 class="comp-name">Ogrodnik</h2>
             </div>
-            <div class="num__box">
-              <div class="num__circle">
-                <p class="num__circle-number">200</p>
-              </div>
-              <p class="num__circle-desc">ogrodów stworzonych od zera</p>
-            </div>
-            <div class="num__box">
-              <div class="num__circle">
-                <p class="num__circle-number">80</p>
-              </div>
-              <p class="num__circle-desc">
-                przestrzeni zielonych których regularnie doglądamy
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-      <!-- OFFER -->
-      <section class="container offer">
-        <h2>nasza oferta</h2>
-        <article>
-          <div class="offer-item">
-            <p class="offer-work">projektowanie ogrodów</p>
-            <img
-              class="icon-arrow"
-              src="./images/icon-arrow-up.svg"
-              alt="arrow icon"
-            />
-          </div>
-          <div class="offer-item">
-            <p class="offer-work">zakładanie ogrodów</p>
-            <img
-              class="icon-arrow"
-              src="./images/icon-arrow-up.svg"
-              alt="arrow icon"
-            />
-          </div>
-          <div class="offer-item">
-            <p class="offer-work">zakładanie trawników</p>
-            <img
-              class="icon-arrow"
-              src="./images/icon-arrow-up.svg"
-              alt="arrow icon"
-            />
-          </div>
-          <div class="offer-item">
-            <p class="offer-work">pielęgnacja przestrzeni zielonych</p>
-            <img
-              class="icon-arrow"
-              src="./images/icon-arrow-up.svg"
-              alt="arrow icon"
-            />
-            <div class="offer-more">
-              <p>opis pracy</p>
-            </div>
-          </div>
-
-          <div class="offer-item">
-            <p class="offer-work">montaż systmów nawadniania</p>
-            <img
-              class="icon-arrow"
-              src="./images/icon-arrow-up.svg"
-              alt="arrow icon"
-            />
+          </a>
+          <!-- NAV -->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">o nas</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">oferta</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">realizacje</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn__mobile-nav hidden">
+            <svg
+              width="32"
+              height="18"
+              class="icon-menu"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="#151515" fill-rule="evenodd">
+                <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+              </g>
+            </svg>
+          </button>
+        </header>
+        <article class="hero">
+          <div class="box">
+            <h1 class="hero__title">Stwórz z nami swój wymarzony ogród!</h1>
+            <p class="hero__title-desc">
+              zaczarójmy razem Twoją zielona przestrzeń
+            </p>
           </div>
         </article>
-      </section>
-      <!-- REALIZATION -->
-      <section class="container realization">
-        <div class="grid"></div>
-      </section>
-      <!-- CONTACT -->
-      <section class="container contact"></section>
-    </main>
+      </div>
 
-    <footer class="footer"></footer>
-    <script src="./script.js"></script>
+      <main class="container">
+        <!-- ABOUT COMPANY -->
+        <section>
+          <div>
+            <h3>
+              Jesteśmy firmą działającą na terenie wielkopolski od 2004 roku.
+            </h3>
+            <article class="numbers__container">
+              <div class="num__box">
+                <div class="num__circle">
+                  <p class="num__circle-number">1100</p>
+                </div>
+                <p class="num__circle-desc">zadowolonych klientów</p>
+              </div>
+              <div class="num__box">
+                <div class="num__circle">
+                  <p class="num__circle-number">200</p>
+                </div>
+                <p class="num__circle-desc">ogrodów stworzonych od zera</p>
+              </div>
+              <div class="num__box">
+                <div class="num__circle">
+                  <p class="num__circle-number">80</p>
+                </div>
+                <p class="num__circle-desc">
+                  przestrzeni zielonych których regularnie doglądamy
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- OFFER -->
+        <section class="container offer">
+          <h2>nasza oferta</h2>
+          <article>
+            <div class="offer-item">
+              <p class="offer-work">projektowanie ogrodów</p>
+              <img
+                class="icon-arrow"
+                src="./images/icon-arrow-up.svg"
+                alt="arrow icon"
+              />
+            </div>
+            <div class="offer-item">
+              <p class="offer-work">zakładanie ogrodów</p>
+              <img
+                class="icon-arrow"
+                src="./images/icon-arrow-up.svg"
+                alt="arrow icon"
+              />
+            </div>
+            <div class="offer-item">
+              <p class="offer-work">zakładanie trawników</p>
+              <img
+                class="icon-arrow"
+                src="./images/icon-arrow-up.svg"
+                alt="arrow icon"
+              />
+            </div>
+            <div class="offer-item">
+              <p class="offer-work">pielęgnacja przestrzeni zielonych</p>
+              <img
+                class="icon-arrow"
+                src="./images/icon-arrow-up.svg"
+                alt="arrow icon"
+              />
+              <div class="offer-more">
+                <p>opis pracy</p>
+              </div>
+            </div>
+
+            <div class="offer-item">
+              <p class="offer-work">montaż systmów nawadniania</p>
+              <img
+                class="icon-arrow"
+                src="./images/icon-arrow-up.svg"
+                alt="arrow icon"
+              />
+            </div>
+          </article>
+        </section>
+        <!-- REALIZATION -->
+        <section class="container realization">
+          <div class="grid"></div>
+        </section>
+        <!-- CONTACT -->
+        <section class="container contact"></section>
+      </main>
+
+      <footer class="footer"></footer>
+      <script src="./script.js"></script>
+    </div>
   </body>
 </html>
