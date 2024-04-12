@@ -1,5 +1,5 @@
 :root {
-  --clr-primary: hsl(292, 63%, 42%);
+  --clr-primary: hsl(191, 69%, 13%);
   --clr-white-900: hsl(0, 0%, 100%);
 }
 
@@ -129,7 +129,8 @@ body {
   /* line-height: 1; */
   font-style: normal;
 
-  color: var(--clr-white-900);
+  color: var(--clr-primary);
+  /* color: var(--clr-white-900); */
   /* text-transform: uppercase; */
   font-size: 6rem;
   position: relative;
