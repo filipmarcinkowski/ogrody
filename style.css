@@ -1,6 +1,18 @@
 :root {
+  /* colors */
+
   --clr-primary: hsl(191, 69%, 13%);
+  --clr-secondary-500: hsl(139, 96%, 57%);
+  --clr-secondary-700: hsl(145, 82%, 44%);
+  --clr-secondary-500: hsl(133, 89%, 33%);
+  --clr-secondary-300: hsl(132, 95%, 22%);
   --clr-white-900: hsl(0, 0%, 100%);
+
+  /* margins */
+
+  --margin-l: 15rem;
+  --margin-m: 10rem;
+  --margin-s: 2rem;
 }
 
 * {
@@ -18,6 +30,11 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+
+  /* font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-style: normal; */
+  color: var(--clr-primary);
 }
 
 .bg-container {
@@ -125,12 +142,13 @@ body {
 }
 
 .hero__title {
-  font-weight: 200;
+  font-weight: 100;
+  /* text-shadow: 0rem 0.1rem 0 var(--clr-white-900); */
   /* line-height: 1; */
   font-style: normal;
 
-  color: var(--clr-primary);
-  /* color: var(--clr-white-900); */
+  /* color: var(--clr-primary); */
+  color: var(--clr-white-900);
   /* text-transform: uppercase; */
   font-size: 6rem;
   position: relative;
@@ -142,9 +160,77 @@ body {
   color: var(--clr-white-900);
   text-transform: uppercase;
 }
+/* MAIN */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* ABOUT */
+
+h3 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 200;
+}
+
+.numbers__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  border: 0.2rem solid red;
+}
+
+.num__box {
+  border: 0.2rem solid greenyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.num__circle {
+  width: 15rem;
+  height: 15rem;
+  background-color: var(--clr-primary);
+  /* background-color: var(--clr-secondary-500); */
+  border: 0.2rem solid var(--clr-primary);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.num__circle-number {
+  color: var(--clr-white-900);
+  /* color: var(--clr-primary); */
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.num__circle-desc {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+}
 
 /* hidden */
 
 .hidden {
   display: none;
+}
+
+/* MARGINS */
+
+.margin-b__l {
+  margin-bottom: var(--margin-l);
+}
+.margin-b__m {
+  margin-bottom: var(--margin-m);
+}
+.margin-b__s {
+  margin-bottom: var(--margin-s);
 }
