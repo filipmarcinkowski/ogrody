@@ -2,7 +2,7 @@
   /* colors */
 
   --clr-primary: hsl(191, 69%, 13%);
-  --clr-secondary-500: hsl(139, 96%, 57%);
+  --clr-secondary-900: hsl(139, 96%, 57%);
   --clr-secondary-700: hsl(145, 82%, 44%);
   --clr-secondary-500: hsl(133, 89%, 33%);
   --clr-secondary-300: hsl(132, 95%, 22%);
@@ -143,6 +143,7 @@ body {
 
 .hero__title {
   font-weight: 100;
+  font-size: 15rem;
   /* text-shadow: 0rem 0.1rem 0 var(--clr-white-900); */
   /* line-height: 1; */
   font-style: normal;
@@ -150,8 +151,13 @@ body {
   /* color: var(--clr-primary); */
   color: var(--clr-white-900);
   /* text-transform: uppercase; */
-  font-size: 6rem;
   position: relative;
+}
+
+.hero__title span {
+  font-weight: 500;
+  color: var(--clr-primary);
+  text-transform: uppercase;
 }
 
 .hero__title-desc {
@@ -180,15 +186,19 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 
-  border: 0.2rem solid red;
+  /* border: 0.2rem solid red; */
 }
 
 .num__box {
-  border: 0.2rem solid greenyellow;
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: center;
+
+  border-radius: 1rem;
+  border: 0.1rem solid var(--clr-secondary-700);
+  border: 0.1rem solid var(--clr-primary);
+  /* background-color: var(--clr-secondary-700); */
 }
 
 .num__circle {
