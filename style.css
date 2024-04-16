@@ -243,6 +243,10 @@ h3 {
   text-transform: uppercase;
 }
 
+ul {
+  list-style: none;
+}
+
 .offer-item__box {
   width: 100%;
   height: 5rem;
@@ -254,8 +258,24 @@ h3 {
   padding: 0 2rem;
   margin-bottom: 0.2rem;
 
-  background-color: var(--clr-secondary-300);
+  /* background-color: var(--clr-secondary-300); */
+  color: var(--clr-primary);
+  border-radius: 0.5rem;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.offer-item__box:hover {
+  background-image: url(./images/grass-11.jpg);
+  background-color: var(--clr-primary);
   color: var(--clr-white-900);
+}
+
+.offer-item__box:hover .icon {
+  fill: var(--clr-white-900);
+}
+.offer-item__box:hover .icon-arrow {
+  stroke: var(--clr-white-900);
 }
 
 .offer-item {
@@ -267,22 +287,44 @@ h3 {
 
 .offer-work {
   font-size: 2.4rem;
+  font-weight: 300;
   text-transform: uppercase;
-  color: var(--clr-white-900);
+  /* color: var(--clr-white-900); */
 }
 
 .icon {
   height: 4rem;
   width: auto;
-  fill: var(--clr-white-900);
+  fill: var(--clr-primary);
+  transition: all 0.1s;
 }
 
 .icon-arrow {
-  height: 1.5rem;
+  height: 1.2rem;
   width: auto;
-  stroke: var(--clr-white-900);
+  stroke: var(--clr-primary);
+  transition: all 0.1s;
+}
 
-  fill: var(--clr-white-900);
+.offer-more {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.2s;
+}
+
+.offer-item__container:hover .offer-more {
+  grid-template-rows: 1fr;
+}
+
+.offer-more__desc {
+  overflow: hidden;
+  font-size: 1.5rem;
+  padding: 0 7rem;
+  transition: all 0.4s;
+}
+
+.offer-item__container:hover .offer-more__desc {
+  padding: 1rem 7rem;
 }
 
 /* hidden */
