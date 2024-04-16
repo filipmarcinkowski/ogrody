@@ -175,16 +175,21 @@ body {
 
 /* ABOUT */
 
+.section-box {
+  margin: 0 2rem 6rem;
+}
+
 h3 {
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
-  font-weight: 200;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .numbers__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 4rem;
 
   /* border: 0.2rem solid red; */
 }
@@ -199,15 +204,17 @@ h3 {
   border: 0.1rem solid var(--clr-secondary-700);
   border: 0.1rem solid var(--clr-primary);
   /* background-color: var(--clr-secondary-700); */
+
+  padding: 6rem 2rem;
 }
 
 .num__circle {
   width: 15rem;
   height: 15rem;
-  background-color: var(--clr-primary);
+  /* background-color: var(--clr-primary); */
   /* background-color: var(--clr-secondary-500); */
-  border: 0.2rem solid var(--clr-primary);
-  border-radius: 50%;
+  /* border: 0.2rem solid var(--clr-primary); */
+  /* border-radius: 50%; */
 
   display: flex;
   justify-content: center;
@@ -216,15 +223,66 @@ h3 {
 
 .num__circle-number {
   color: var(--clr-white-900);
-  /* color: var(--clr-primary); */
-  font-size: 4rem;
-  font-weight: 300;
+  color: var(--clr-primary);
+  font-size: 10rem;
+  font-weight: 700;
 }
 
 .num__circle-desc {
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 300;
   text-align: center;
+  text-transform: uppercase;
+}
+
+/* OFFER */
+
+.offer-title {
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.offer-item__box {
+  width: 100%;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0 2rem;
+  margin-bottom: 0.2rem;
+
+  background-color: var(--clr-secondary-300);
+  color: var(--clr-white-900);
+}
+
+.offer-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer-work {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: var(--clr-white-900);
+}
+
+.icon {
+  height: 4rem;
+  width: auto;
+  fill: var(--clr-white-900);
+}
+
+.icon-arrow {
+  height: 1.5rem;
+  width: auto;
+  stroke: var(--clr-white-900);
+
+  fill: var(--clr-white-900);
 }
 
 /* hidden */
