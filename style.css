@@ -414,9 +414,13 @@ ul {
 
 .gallery-title__box {
   grid-column: 1/-1;
+  background-color: var(--clr-white-900);
+  display: grid;
+  grid-template-columns: 15rem 1fr 15rem;
 }
 
 .gallery-title {
+  grid-column: 2/3;
   color: var(--clr-white-900);
   color: var(--clr-primary);
   letter-spacing: 1.4rem;
@@ -424,7 +428,6 @@ ul {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1;
-  background-color: var(--clr-white-900);
 }
 
 .flex {
@@ -476,6 +479,10 @@ ul {
   height: 100%;
   object-fit: cover;
 } */
+
+.full-size {
+  width: 100%;
+}
 
 /* COLORS */
 
