@@ -253,6 +253,7 @@ h4 {
   margin-top: 3rem;
   font-size: 1.5rem;
   text-transform: uppercase;
+  /* color: var(--clr-secondary-1); */
 }
 
 .num__circle {
@@ -398,6 +399,7 @@ ul {
 .main-title__box {
   grid-column: 1/-1;
   justify-items: center;
+  border-bottom: 0.1rem solid var(--clr-white-900);
 }
 
 .main-title {
@@ -415,6 +417,7 @@ ul {
 .gallery-title__box {
   grid-column: 1/-1;
   background-color: var(--clr-white-900);
+  background-color: var(--clr-primary);
   display: grid;
   grid-template-columns: 15rem 1fr 15rem;
 }
@@ -422,10 +425,10 @@ ul {
 .gallery-title {
   grid-column: 2/3;
   color: var(--clr-white-900);
-  color: var(--clr-primary);
+  /* color: var(--clr-primary); */
   letter-spacing: 1.4rem;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
 }
