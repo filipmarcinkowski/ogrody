@@ -20,6 +20,7 @@
   /* margins */
 
   --margin-l: 15rem;
+  --margin-ml: 12rem;
   --margin-m: 10rem;
   --margin-ms: 5rem;
   --margin-s: 2rem;
@@ -190,19 +191,19 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
-
+/* *************************************** */
 /* ABOUT */
+/* *************************************** */
 
 .section-box {
   margin: 0 2rem 6rem;
 }
 
 h3 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   font-weight: 500;
   text-transform: uppercase;
-  /* color: var(--clr-secondary-3); */
   position: relative;
 }
 
@@ -245,6 +246,8 @@ h4 {
     var(--clr-secondary-7),
     var(--clr-secondary-9)
   );
+  
+  background-image: url(./images/grass-13.jpg);
   border: none;
 } */
 
@@ -283,7 +286,9 @@ h4 {
   text-transform: uppercase;
 }
 
+/* *************************** */
 /* OFFER */
+/* *************************** */
 
 .offer-title__box {
   width: 100%;
@@ -387,7 +392,9 @@ ul {
   padding: 1rem 2rem;
 }
 
+/* *********************************** */
 /* REALIZATIONS */
+/* *********************************** */
 
 .realizations {
   display: grid;
@@ -399,19 +406,40 @@ ul {
 .main-title__box {
   grid-column: 1/-1;
   justify-items: center;
-  border-bottom: 0.1rem solid var(--clr-white-900);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  /* border-bottom: 0.1rem solid var(--clr-white-900); */
 }
 
 .main-title {
   color: var(--clr-white-900);
   letter-spacing: 4rem;
-  font-size: 4rem;
+  font-size: 3.4rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
   text-align: center;
 
   margin: 1rem 10rem;
+  padding-top: 20rem;
+  position: relative;
+  z-index: 10;
+}
+
+.main-title::after {
+  content: 'REALIZACJE';
+  color: #222;
+  letter-spacing: 4rem;
+  font-size: 36rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.65;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
 }
 
 .gallery-title__box {
@@ -433,6 +461,17 @@ ul {
   line-height: 1;
 }
 
+/* .gallery-title__vertical {
+  color: var(--clr-white-900);
+  
+  letter-spacing: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  writing-mode: vertical-lr;
+} */
+
 .flex {
   grid-column: 1/-1;
   align-self: end;
@@ -441,8 +480,10 @@ ul {
   flex-wrap: nowrap;
   justify-content: center;
   gap: 0.1rem;
+  /* margin: 0 2rem; */
 }
 
+.image-box__bg,
 .image-box {
   width: 10rem;
   background-size: cover;
@@ -562,6 +603,9 @@ ul {
 
 .margin-b__l {
   margin-bottom: var(--margin-l);
+}
+.margin-b__ml {
+  margin-bottom: var(--margin-ml);
 }
 .margin-b__m {
   margin-bottom: var(--margin-m);
