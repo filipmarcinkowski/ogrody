@@ -42,9 +42,6 @@ body {
   font-weight: 500;
   font-style: normal;
 
-  /* font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
-  font-style: normal; */
   color: var(--clr-primary);
 }
 
@@ -72,7 +69,6 @@ body {
   padding: 4rem 6rem;
 
   z-index: 10;
-  /* border: 0.2rem solid red; */
 }
 
 .logo__link {
@@ -92,7 +88,7 @@ body {
   font-size: 3.5rem;
   color: var(--clr-white-900);
   /* text-transform: uppercase; */
-  letter-spacing: 3.5rem;
+  letter-spacing: 1rem;
 }
 
 .comp-logo {
@@ -124,10 +120,11 @@ body {
 
 .contact-box {
   /* background-color: var(--clr-white-900); */
-  border-radius: 1rem;
-  padding: 1rem 4rem;
-  border: 0.5rem solid var(--clr-white-900);
+  border-radius: 0.8rem;
+  padding: 1rem 3rem;
+  border: 0.3rem solid var(--clr-white-900);
   cursor: pointer;
+  transition: all 0.4s;
 
   /* color: transparent; */
 
@@ -144,7 +141,7 @@ body {
 } */
 
 .contact-box:hover {
-  border: 0.5rem solid var(--clr-secondary-1);
+  border: 0.3rem solid var(--clr-secondary-1);
   background-color: var(--clr-secondary-1);
 
   /* border: none; */
@@ -205,13 +202,22 @@ body {
   /* background-color: red; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  text-transform: uppercase;
   color: var(--clr-primary);
   color: var(--clr-secondary-9);
   color: var(--clr-secondary-1);
+  /* //////////////////////// */
   /* color: transparent; */
-
-  text-transform: uppercase;
+  /* background-image: url(./images/grass-10.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; */
 }
+
+/* .bg-container:hover .hero__title-inner {
+  color: red;
+} */
 
 .hero__title-desc {
   font-size: 1.5rem;
@@ -236,7 +242,7 @@ body {
 h3 {
   font-size: 4rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   position: relative;
 }
@@ -610,37 +616,52 @@ ul {
 /* BACKGROUD IMAGES FOR REALIZASIONS */
 
 .image-1 {
-  background-image: url(./images/grass-1.jpg);
+  background-image: url(./images/galeria/ogrod-1.jpg);
 }
 .image-2 {
-  background-image: url(./images/grass-2.jpg);
+  background-image: url(./images/galeria/ogrod-2.jpg);
 }
 .image-3 {
-  background-image: url(./images/grass-3.jpg);
+  background-image: url(./images/galeria/ogrod-3.jpg);
 }
 .image-4 {
-  background-image: url(./images/grass-4.jpg);
+  background-image: url(./images/galeria/ogrod-4.jpg);
 }
 .image-5 {
-  background-image: url(./images/grass-5.jpg);
+  background-image: url(./images/galeria/ogrod-5.jpg);
 }
 .image-6 {
-  background-image: url(./images/grass-6.jpg);
+  background-image: url();
 }
 .image-7 {
-  background-image: url(./images/grass-7.jpg);
+  background-image: url(./images/galeria/trawa-1.jpg);
 }
 .image-8 {
-  background-image: url(./images/grass-8.jpg);
+  background-image: url(./images/galeria/trawa-2.jpg);
 }
 .image-9 {
-  background-image: url(./images/grass-9.jpg);
+  background-image: url(./images/galeria/trawa-3.jpg);
 }
 .image-10 {
-  background-image: url(./images/grass-10.jpg);
+  background-image: url(./images/galeria/trawa-4.jpg);
 }
 .image-11 {
-  background-image: url(./images/grass-11.jpg);
+  background-image: url(./images/galeria/trawa-5.jpg);
+}
+.image-12 {
+  background-image: url(./images/galeria/p1.jpg);
+}
+.image-13 {
+  background-image: url(./images/galeria/p2.jpg);
+}
+.image-14 {
+  background-image: url(./images/galeria/p3.jpg);
+}
+.image-15 {
+  background-image: url(./images/galeria/p4.jpg);
+}
+.image-16 {
+  background-image: url(./images/galeria/p5.jpg);
 }
 /* hidden */
 
