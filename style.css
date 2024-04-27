@@ -1,9 +1,9 @@
 :root {
   /* colors */
 
-  /* --clr-primary: hsl(191, 69%, 13%); */
   --clr-primary: #1e1e1e;
   --clr-white-900: hsl(0, 0%, 100%);
+  /* --clr-primary: hsl(191, 69%, 13%); */
 
   /* alternative colors */
 
