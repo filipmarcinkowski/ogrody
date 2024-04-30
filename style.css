@@ -24,6 +24,8 @@
   --margin-m: 10rem;
   --margin-ms: 5rem;
   --margin-s: 2rem;
+
+  --margin-xs: 1rem;
 }
 
 * {
@@ -517,7 +519,7 @@ ul {
 .flex {
   grid-column: 1/-1;
   align-self: end;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -581,6 +583,20 @@ ul {
 
 .full-size {
   width: 100%;
+}
+
+/* ********************************* */
+/* CONTACT */
+/* ********************************* */
+.contact {
+  height: 100rem;
+}
+.contact-title__box {
+  height: 15rem;
+}
+
+.contact-title {
+  color: var(--clr-primary);
 }
 
 /* COLORS */
@@ -685,4 +701,7 @@ ul {
 }
 .margin-b__s {
   margin-bottom: var(--margin-s);
+}
+.margin-b__xs {
+  margin-bottom: var(--margin-xs);
 }
