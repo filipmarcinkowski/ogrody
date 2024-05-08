@@ -459,6 +459,9 @@ ul {
   line-height: 1;
   text-align: center;
   padding-bottom: 1rem;
+  /* ////////////////////////////// */
+  padding-left: 4rem;
+  /* ////////////////////////////// */
 
   position: relative;
   z-index: 10;
@@ -589,14 +592,79 @@ ul {
 /* CONTACT */
 /* ********************************* */
 .contact {
-  height: 100rem;
+  height: 100vh;
 }
 .contact-title__box {
-  height: 15rem;
+  height: 20vh;
 }
 
 .contact-title {
   color: var(--clr-primary);
+}
+
+.contact-wings {
+  height: 60vh;
+  display: grid;
+  align-items: center;
+  gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 2rem;
+}
+.contact-wing__left,
+.contact-wing__right {
+  font-size: 2rem;
+  border: 0.2rem solid green;
+}
+
+.contact-item__box {
+  display: grid;
+
+  /* border: 0.2rem solid red; */
+  /* width: 60rem; */
+}
+
+.left {
+  justify-content: end;
+}
+.right {
+  justify-content: start;
+}
+
+.contact-item__link {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 4rem;
+  /* border: 0.2rem solid yellow; */
+}
+
+.contact-item__desc {
+  /* border: 0.2rem solid blue; */
+  display: flex;
+}
+
+.contact-item__icon-box {
+  background-color: var(--clr-primary);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.contact-item__icon {
+  font-size: 4rem;
+  line-height: 1.5;
+  text-align: center;
+  fill: var(--clr-white-900);
+
+  height: 2.5rem;
+  width: auto;
 }
 
 /* COLORS */

@@ -1,6 +1,6 @@
 'use strict';
-const title = document.querySelector('.hero__title-inner');
-const btnContact = document.querySelector('.contact-box');
+// const title = document.querySelector('.hero__title-inner');
+// const btnContact = document.querySelector('.contact-box');
 
 // const changeToWhite = function () {
 //   title.style.color = 'var(--clr-white-900)';
