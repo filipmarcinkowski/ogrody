@@ -592,7 +592,7 @@ ul {
 /* CONTACT */
 /* ********************************* */
 .contact {
-  height: 100vh;
+  height: 80vh;
 }
 .contact-title__box {
   height: 20vh;
@@ -613,7 +613,7 @@ ul {
 .contact-wing__left,
 .contact-wing__right {
   font-size: 2rem;
-  border: 0.2rem solid green;
+  /* border: 0.2rem solid green; */
 }
 
 .contact-item__box {
@@ -665,6 +665,44 @@ ul {
 
   height: 2.5rem;
   width: auto;
+}
+
+/* FOOTER */
+.footer {
+  height: 20vh;
+  background-color: var(--clr-primary);
+  color: var(--clr-white-900);
+  font-size: 2rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* border: 0.2rem solid red; */
+}
+
+.footer-items {
+  margin: 0 5vw;
+  width: 100%;
+  /* border: 0.2rem solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-item__rights span {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.footer-item__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item__link-icon {
+  height: 3rem;
+  width: auto;
+  fill: var(--clr-white-900);
 }
 
 /* COLORS */
