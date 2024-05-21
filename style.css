@@ -595,7 +595,7 @@ ul {
   height: 80vh;
 }
 .contact-title__box {
-  height: 20vh;
+  height: 15vh;
 }
 
 .contact-title {
@@ -603,7 +603,7 @@ ul {
 }
 
 .contact-wings {
-  height: 60vh;
+  height: 65vh;
   display: grid;
   align-items: center;
   gap: 4rem;
