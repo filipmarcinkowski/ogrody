@@ -11,3 +11,14 @@
 
 // btnContact.addEventListener('mouseover', changeToWhite);
 // btnContact.addEventListener('mouseout', changeToYellow);
+
+const imageBox = document.querySelectorAll('.image-box');
+
+imageBox.forEach(function (i) {
+  i.addEventListener('click', function () {
+    imageBox.forEach(function (box) {
+      box.classList.remove('full-size');
+    });
+    i.classList.add('full-size');
+  });
+});

@@ -447,7 +447,7 @@ ul {
 }
 
 .line-bottom {
-  border-bottom: 0.3rem solid var(--clr-white-900);
+  /* border-bottom: 0.3rem solid var(--clr-white-900); */
 }
 
 .main-title {
@@ -564,8 +564,9 @@ ul {
 }
 
 .image-box:hover {
-  width: 100%;
+  /* width: 100%; */
 }
+
 .image-box:hover .image-desc__desc {
   opacity: 100;
 }
@@ -601,8 +602,6 @@ ul {
 .contact-title {
   color: var(--clr-primary);
 }
-
-/* ? */
 
 .contact-wings {
   height: 65vh;
