@@ -396,7 +396,17 @@ ul {
 }
 /* ///////////////////////////////////////////////////// */
 
-.offer-item__container:hover .offer-more {
+.offer-open {
+  grid-template-rows: 1fr;
+}
+.cross-1__close {
+  transform: rotate(90deg);
+}
+.cross-2__close {
+  transform: rotate(0deg);
+}
+
+/* .offer-item__container:hover .offer-more {
   grid-template-rows: 1fr;
 }
 .offer-item__container:hover .cross-1 {
@@ -404,7 +414,7 @@ ul {
 }
 .offer-item__container:hover .cross-2 {
   transform: rotate(0deg);
-}
+} */
 
 /* ///////////////////////////////////////////////////// */
 
@@ -420,9 +430,13 @@ ul {
   transition: all 0.4s;
 }
 
-.offer-item__container:hover .offer-more__desc {
+.add-padding {
   padding: 1rem 2rem;
 }
+
+/* .offer-item__container:hover .offer-more__desc {
+  padding: 1rem 2rem;
+} */
 
 /* *********************************** */
 /* REALIZATIONS */
@@ -695,8 +709,9 @@ ul {
   height: 4.5rem;
   width: auto;
 }
-
+/* ************************** */
 /* FOOTER */
+/* ************************** */
 .footer {
   height: 20vh;
   background-color: var(--clr-primary);
