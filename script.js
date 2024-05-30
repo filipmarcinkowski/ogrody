@@ -26,20 +26,15 @@ imageBox.forEach(function (i) {
 
 // OFFER DESCRIPTION OPEN / CLOSE FUNCTIONALITY
 
-const showDesc = function (a, b, c, d) {
-  a.classList.toggle('offer-open');
-  b.classList.toggle('cross-1__close');
-  c.classList.toggle('cross-2__close');
-  d.classList.toggle('add-padding');
-};
-
 offerBox.forEach(function (i) {
   const showOffer = i.querySelector('.offer-more');
   const offerIconClose1 = i.querySelector('.cross-1');
   const offerIconClose2 = i.querySelector('.cross-2');
   const offerDesc = i.querySelector('.offer-more__desc');
-  i.addEventListener(
-    'click',
-    showDesc(showOffer, offerIconClose1, offerIconClose2, offerDesc)
-  );
+  i.addEventListener('click', function (a, b, c, d) {
+    showOffer.classList.toggle('offer-open');
+    offerIconClose1.classList.toggle('cross-1__close');
+    offerIconClose2.classList.toggle('cross-2__close');
+    offerDesc.classList.toggle('add-padding');
+  });
 });
