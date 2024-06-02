@@ -31,7 +31,7 @@ offerBox.forEach(function (i) {
   const offerIconClose1 = i.querySelector('.cross-1');
   const offerIconClose2 = i.querySelector('.cross-2');
   const offerDesc = i.querySelector('.offer-more__desc');
-  i.addEventListener('click', function (a, b, c, d) {
+  i.addEventListener('click', function () {
     showOffer.classList.toggle('offer-open');
     offerIconClose1.classList.toggle('cross-1__close');
     offerIconClose2.classList.toggle('cross-2__close');
