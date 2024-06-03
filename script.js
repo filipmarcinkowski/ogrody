@@ -15,26 +15,45 @@
 const imageBox = document.querySelectorAll('.image-box');
 const offerBox = document.querySelectorAll('.offer-item__container');
 
-imageBox.forEach(function (i) {
-  i.addEventListener('click', function () {
-    imageBox.forEach(function (box) {
-      box.classList.remove('full-size');
-    });
+// imageBox.forEach(function (i) {
+//   i.addEventListener('click', function () {
+//     imageBox.forEach(function (box) {
+//       box.classList.remove('full-size');
+//     });
+//     i.classList.add('full-size');
+//   });
+// });
+
+const hideImage = function (box) {
+  box.classList.remove('full-size');
+};
+
+const showImage = function (i) {
+  const findImage = function () {
+    imageBox.forEach(hideImage);
     i.classList.add('full-size');
-  });
-});
+  };
+  i.addEventListener('click', findImage);
+};
+
+imageBox.forEach(showImage);
 
 // OFFER DESCRIPTION OPEN / CLOSE FUNCTIONALITY
 
-offerBox.forEach(function (i) {
+const showDesc = function (i) {
   const showOffer = i.querySelector('.offer-more');
   const offerIconClose1 = i.querySelector('.cross-1');
   const offerIconClose2 = i.querySelector('.cross-2');
   const offerDesc = i.querySelector('.offer-more__desc');
-  i.addEventListener('click', function () {
+
+  const showDescExtras = function () {
     showOffer.classList.toggle('offer-open');
     offerIconClose1.classList.toggle('cross-1__close');
     offerIconClose2.classList.toggle('cross-2__close');
     offerDesc.classList.toggle('add-padding');
-  });
-});
+  };
+
+  i.addEventListener('click', showDescExtras);
+};
+
+offerBox.forEach(showDesc);
