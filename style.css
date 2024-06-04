@@ -548,8 +548,6 @@ ul {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: 2rem;
-  /* border: 0.1rem solid var(--clr-white-900); */
-  /* padding: 1rem; */
 
   transition: width 2s ease, opacity 2s ease;
 }
@@ -557,8 +555,7 @@ ul {
 .image-desc__num {
   font-size: 3rem;
   font-weight: 700;
-  /* opacity: 100%; */
-  /* color: red; */
+  margin: 2rem;
 }
 
 .image-box:hover {
