@@ -530,6 +530,8 @@ ul {
 
   display: flex;
   align-items: start;
+
+  transition: width 2s;
   /* align-items: end; */
 }
 
@@ -549,17 +551,17 @@ ul {
   text-transform: uppercase;
   margin: 2rem;
 
-  transition: width 2s ease, opacity 2s ease;
+  transition: width 3s ease, opacity 3s ease;
 }
 
 .image-desc__num {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 2rem;
 }
 
 .image-box:hover {
-  /* width: 100%; */
+  align-items: end;
 }
 
 .image-box:hover .image-desc__desc {
