@@ -26,7 +26,6 @@ const offerBox = document.querySelectorAll('.offer-item__container');
 
 const hideImage = function (box) {
   const imageDesc = box.querySelector('.image-desc__desc');
-
   box.classList.remove('full-size');
   imageDesc.classList.remove('show__desc');
 };
