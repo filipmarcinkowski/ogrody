@@ -227,6 +227,7 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  padding-top: var(--margin-l);
   /* background-color: red; */
 }
 /* *************************************** */
@@ -555,8 +556,14 @@ ul {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: 2rem;
+  /* flex-wrap: nowrap; */
 
   transition: width 3s ease, opacity 3s ease;
+
+  /* /////////////////////////////////// */
+  white-space: nowrap;
+  overflow: hidden;
+  /* /////////////////////////////////// */
 }
 
 .image-desc__num {
