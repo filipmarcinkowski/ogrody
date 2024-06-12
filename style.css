@@ -438,7 +438,7 @@ ul {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  height: 25rem;
+  height: 20rem;
 }
 
 .main-title {
@@ -461,7 +461,8 @@ ul {
 .main-title__box-desc {
   color: #222;
   letter-spacing: 4rem;
-  font-size: 45rem;
+  /* font-size: 45rem; */
+  font-size: 30rem;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
