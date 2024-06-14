@@ -101,6 +101,21 @@ body {
   width: auto;
 } */
 /* NAV */
+
+.btn__mobile-nav {
+  background-color: transparent;
+  border: none;
+}
+
+.btn__mobile-nav__icon-menu {
+  display: block;
+  fill: white;
+  stroke: white;
+
+  height: 3rem;
+  width: auto;
+}
+
 .nav__list {
   list-style: none;
   display: flex;
