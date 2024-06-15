@@ -116,6 +116,13 @@ body {
   width: auto;
 }
 
+.nav {
+  background-color: red;
+}
+
+.mobile-ooo-open {
+}
+
 .nav__list {
   list-style: none;
   display: flex;
