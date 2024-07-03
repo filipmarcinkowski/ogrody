@@ -103,6 +103,10 @@ body {
 /* NAV */
 
 .btn__mobile-nav {
+  /* display: none; */
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
   background-color: transparent;
   border: none;
 }
@@ -114,10 +118,6 @@ body {
 
   height: 3rem;
   width: auto;
-}
-
-.nav {
-  background-color: red;
 }
 
 .mobile-ooo-open {
