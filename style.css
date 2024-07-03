@@ -103,10 +103,10 @@ body {
 /* NAV */
 
 .btn__mobile-nav {
-  /* display: none; */
+  display: none;
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 5rem;
+  right: 5rem;
   background-color: transparent;
   border: none;
 }
