@@ -62,6 +62,7 @@ body {
 
 .header {
   width: 100%;
+  background-color: red;
 
   display: flex;
   justify-content: space-between;
@@ -82,10 +83,11 @@ body {
 
 .logo-box {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  /* background-color: #2c6e49; */
 }
 
 .comp-name {
@@ -104,9 +106,9 @@ body {
 
 .btn__mobile-nav {
   display: none;
-  position: absolute;
+  /* position: absolute;
   top: 5rem;
-  right: 5rem;
+  right: 5rem; */
   background-color: transparent;
   border: none;
 }
@@ -890,4 +892,11 @@ ul {
 }
 .margin-b__xs {
   margin-bottom: var(--margin-xs);
+}
+
+/* *************************** */
+/* functionality */
+/* *************************** */
+
+.open {
 }
