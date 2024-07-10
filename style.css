@@ -46,7 +46,7 @@ body {
   font-style: normal;
 
   width: 100vw;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   color: var(--clr-primary);
 }
@@ -65,7 +65,7 @@ body {
 
 .header {
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
 
   display: flex;
   justify-content: space-between;
@@ -113,6 +113,7 @@ body {
 
 .nav {
   display: flex;
+  /* justify-content: space-between; */
   padding: 0 5rem;
 }
 
@@ -141,10 +142,6 @@ body {
 
   fill: white;
   stroke: white;
-}
-
-.nav {
-  /* position: relative; */
 }
 
 .nav__list {
