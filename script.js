@@ -61,3 +61,18 @@ const showDesc = function (i) {
 };
 
 offerBox.forEach(showDesc);
+
+// MOBILE NAVIGATION
+
+const btnBox = document.querySelector('.btn__mobile-nav');
+const mobileNav = document.querySelector('.nav');
+const body = document.querySelector('.body');
+const navList = document.querySelector('.nav__list');
+
+btnBox.addEventListener('click', function () {
+  mobileNav.classList.toggle('show__menu');
+  body.classList.toggle('show__menu-b');
+  navList.classList.toggle('show__nav-list');
+  // if (mobileNav.classList.contains('show__menu')) {
+  // }
+});

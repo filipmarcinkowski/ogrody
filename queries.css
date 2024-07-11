@@ -1,4 +1,10 @@
 @media (max-width: 64em) {
+  body {
+    /* width: 100vw; */
+    /* width: 100vw; */
+    /* overflow: hidden; */
+  }
+
   .header {
     align-items: start;
     /* position: relative; */
@@ -36,12 +42,12 @@
     top: 50%;
     left: 150%;
     transform: translate(-50%, -50%);
-    transition: left 0.3s;
+    transition: left 0s;
   }
 
   /* /////////////////////////////////////// */
 
-  /* .show__menu-b {
+  .show__menu-b {
     overflow: hidden;
   }
 
@@ -51,6 +57,6 @@
   }
   .show__nav-list {
     left: 50%;
-  } */
+  }
   /* /////////////////////////////////////// */
 }
