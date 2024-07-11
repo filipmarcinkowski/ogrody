@@ -111,6 +111,7 @@ body {
 
 .nav {
   display: flex;
+  /* background-color: #529141; */
   /* justify-content: space-between; */
   padding: 0 5rem;
   transition: all 0.6s;

@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
 
-    z-index: 100;
+    /* z-index: 100; */
   }
 
   .nav {
@@ -39,14 +39,14 @@
     list-style: none;
     flex-direction: column;
     position: absolute;
-    top: 50%;
+    top: 50vh;
     left: 150%;
     transform: translate(-50%, -50%);
-    transition: left 0s;
+
+    transition: all 0.6s;
   }
 
   /* /////////////////////////////////////// */
-
   .show__menu-b {
     overflow: hidden;
   }
@@ -57,6 +57,7 @@
   }
   .show__nav-list {
     left: 50%;
+    /* height: 100vh; */
   }
   /* /////////////////////////////////////// */
 }
