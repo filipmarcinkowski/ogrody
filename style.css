@@ -46,10 +46,10 @@ body {
   font-style: normal;
 
   max-width: 100vw;
-  width: 100vw;
+
   /* overflow-y: scroll; */
   /* width: 100vw; */
-  /* overflow: hidden; */
+  /* overflow-x: hidden; */
 
   color: var(--clr-primary);
   transition: all 0s;
@@ -802,53 +802,27 @@ ul {
 /* BACKGROUD IMAGES FOR REALIZASIONS */
 
 .image-1 {
-  background-image: url(./images/galeria/ogrod-1.jpg);
+  background-image: url(./images/galeria/male/o-1.jpg);
 }
 .image-2 {
-  background-image: url(./images/galeria/ogrod-2.jpg);
+  background-image: url(./images/galeria/male/o-2.jpg);
 }
 .image-3 {
-  background-image: url(./images/galeria/ogrod-3.jpg);
+  background-image: url(./images/galeria/male/o-3.jpg);
 }
 .image-4 {
-  background-image: url(./images/galeria/ogrod-4.jpg);
+  background-image: url(./images/galeria/male/o-4.jpg);
 }
 .image-5 {
-  background-image: url(./images/galeria/ogrod-5.jpg);
+  background-image: url(./images/galeria/male/o-5.jpg);
 }
 .image-6 {
-  background-image: url();
+  background-image: url(./images/galeria/male/o-6.jpg);
 }
 .image-7 {
-  background-image: url(./images/galeria/trawa-1.jpg);
+  background-image: url(./images/galeria/male/o-7.jpg);
 }
-.image-8 {
-  background-image: url(./images/galeria/trawa-2.jpg);
-}
-.image-9 {
-  background-image: url(./images/galeria/trawa-3.jpg);
-}
-.image-10 {
-  background-image: url(./images/galeria/trawa-4.jpg);
-}
-.image-11 {
-  background-image: url(./images/galeria/trawa-5.jpg);
-}
-.image-12 {
-  background-image: url(./images/galeria/p1.jpg);
-}
-.image-13 {
-  background-image: url(./images/galeria/p2.jpg);
-}
-.image-14 {
-  background-image: url(./images/galeria/p3.jpg);
-}
-.image-15 {
-  background-image: url(./images/galeria/p4.jpg);
-}
-.image-16 {
-  background-image: url(./images/galeria/p5.jpg);
-}
+
 /* hidden */
 
 .hidden {
