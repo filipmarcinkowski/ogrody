@@ -78,7 +78,7 @@ body {
   top: 0;
   left: 0;
 
-  height: 10rem;
+  /* height: 10rem; */
   z-index: 10;
   /* transition: all 0.6s; */
 }
