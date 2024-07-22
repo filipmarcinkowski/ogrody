@@ -3,7 +3,6 @@
   .hero__title {
     font-size: 12rem;
   }
-
   .offer-item__box {
     align-items: center;
     grid-template-columns: 8rem 1fr 8rem;
@@ -12,7 +11,6 @@
     font-size: 5rem;
     margin-bottom: 0;
   }
-
   .icon-cross {
     margin-bottom: 0rem;
   }
@@ -20,8 +18,59 @@
 
 /* 1233px */
 @media (max-width: 77em) {
+  .hero__title {
+    font-size: 10rem;
+  }
+
+  .num__circle-number {
+    font-size: 8rem;
+  }
+
+  .num__circle-desc {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  .main-title {
+    letter-spacing: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .main-title__box {
+    height: 15rem;
+  }
+  .main-title__box-desc {
+    font-size: 22rem;
+  }
+  .offer-item__box {
+    height: 10rem;
+  }
   .offer-work {
     font-size: 3rem;
+  }
+
+  .contact-title__box {
+    height: 15vh;
+  }
+
+  .contact-item__link-num {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .contact-item__desc {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    font-size: 1.5rem;
+  }
+
+  .footer-item__link-icon {
+    height: 1.8rem;
   }
 }
 
