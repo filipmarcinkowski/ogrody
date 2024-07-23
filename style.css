@@ -521,17 +521,6 @@ ul {
   line-height: 2;
 }
 
-/* .gallery-title__vertical {
-  color: var(--clr-white-900);
-  
-  letter-spacing: 1.4rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  writing-mode: vertical-lr;
-} */
-
 .flex {
   grid-column: 1/-1;
   align-self: end;
