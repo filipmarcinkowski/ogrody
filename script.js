@@ -15,21 +15,13 @@
 const imageBox = document.querySelectorAll('.image-box');
 const offerBox = document.querySelectorAll('.offer-item__container');
 
-// imageBox.forEach(function (i) {
-//   i.addEventListener('click', function () {
-//     imageBox.forEach(function (box) {
-//       box.classList.remove('full-size');
-//     });
-//     i.classList.add('full-size');
-//   });
-// });
-
 const hideImage = function (box) {
   const imageDesc = box.querySelector('.image-desc__desc');
   box.classList.remove('full-size');
   imageDesc.classList.remove('show__desc');
 };
 
+// REALIZATIONS images OPEN / CLOSE FUNCTIONALITY
 const showImage = function (i) {
   const imageDesc = i.querySelector('.image-desc__desc');
   const findImage = function () {
