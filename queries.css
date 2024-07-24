@@ -3,6 +3,8 @@
   .hero__title {
     font-size: 12rem;
   }
+
+  /* OFFER */
   .offer-item__box {
     align-items: center;
     grid-template-columns: 8rem 1fr 8rem;
@@ -18,10 +20,12 @@
 
 /* 1233px */
 @media (max-width: 77em) {
+  /* HERO */
   .hero__title {
     font-size: 10rem;
   }
 
+  /* ABOUT */
   .num__circle-number {
     font-size: 8rem;
   }
@@ -33,6 +37,8 @@
   h3 {
     font-size: 3rem;
   }
+
+  /* REALIZACIONS */
 
   .main-title {
     letter-spacing: 3rem;
@@ -76,11 +82,34 @@
 
 /* 1024 px */
 @media (max-width: 64em) {
-  body {
-    /* width: 100vw; */
-    /* overflow-x: hidden; */
+  /* MARGINS */
+
+  .margin-b__l {
+    margin-bottom: var(--margin-m);
+  }
+  .margin-b__ml {
+    margin-bottom: var(--margin-ms);
+  }
+  .margin-b__m {
+    margin-bottom: var(--margin-s);
+  }
+  .margin-b__ms {
+    margin-bottom: var(--margin-s);
+  }
+  .margin-b__s {
+    margin-bottom: var(--margin-xs);
+  }
+  .margin-b__xs {
+    margin-bottom: var(--margin-xs);
   }
 
+  .hero__title {
+    font-size: 8rem;
+  }
+
+  .hero__title-desc {
+    font-size: 1.2rem;
+  }
   .header {
     align-items: start;
   }
@@ -95,15 +124,101 @@
 
   .nav {
     height: 100vh;
-
     width: 100%;
 
-    position: relative;
     display: flex;
     justify-content: end;
     align-items: start;
+
+    position: relative;
     z-index: 10;
   }
+
+  /* MAIN */
+  .container {
+    padding-top: var(--margin-m);
+  }
+
+  /* ABOUT */
+  .numbers__container {
+    gap: 2rem;
+  }
+  .num__box {
+    padding: 4rem 2rem;
+  }
+  .num__circle-number {
+    font-size: 8rem;
+  }
+
+  .num__circle-desc {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  /* REALIZATIONS */
+
+  .main-title {
+    letter-spacing: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .flex {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .image-box__bg,
+  .image-box {
+    height: 5rem;
+    width: 100%;
+    max-width: 100%;
+    transition: all 1s;
+  }
+
+  .full-size {
+    height: 80vh;
+  }
+  /* OFFER */
+
+  .offer-work {
+    font-size: 2.6rem;
+  }
+
+  /* CONTACT */
+
+  .contact-wings {
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-item__link {
+    margin-bottom: 0;
+  }
+  .contact-item__desc {
+    height: 3rem;
+    margin-top: 3rem;
+  }
+
+  .contact-item__desc-right {
+    margin-left: 9rem;
+  }
+  .contact-item__desc-left {
+    margin-right: 9rem;
+  }
+
+  .contact-item__icon-box {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .contact-item__icon {
+    height: 2.5rem;
+  }
+
+  /* MOBILE NAV */
 
   /* .btn__mobile-nav {
     display: block;
@@ -136,41 +251,6 @@
     transition: all 0.6s;
   } */
 
-  .image-box__bg,
-  .image-box {
-    height: 10rem;
-    width: 100%;
-    transition: all 1s;
-    /* background-position-y: bottom; */
-  }
-
-  .image-desc__box {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-wrap: nowrap;
-    color: var(--clr-white-900);
-  }
-
-  .full-size {
-    /* height: 100%; */
-  }
-
-  .flex {
-    grid-column: 1/-1;
-    align-self: end;
-    /* justify-content: center; */
-    /* height: 100vh; */
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 0.1rem;
-
-    /* margin: 0 2rem; */
-  }
-
   /* /////////////////////////////////////// */
 
   /* for body */
@@ -186,4 +266,35 @@
     left: 50%;
   }
   /* /////////////////////////////////////// */
+}
+
+/* 800px */
+@media (max-width: 50em) {
+  /* .hero__title {
+    font-size: 8rem;
+  }
+
+  .num__circle-number {
+    font-size: 8rem;
+  }
+
+  .num__circle-desc {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  .main-title {
+    letter-spacing: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .main-title__box {
+    height: 15rem;
+  }
+  .main-title__box-desc {
+    font-size: 22rem;
+  } */
 }
