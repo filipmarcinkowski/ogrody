@@ -325,119 +325,6 @@ h4 {
   text-transform: uppercase;
 }
 
-/* *************************** */
-/* OFFER */
-/* *************************** */
-
-.offer-title__box {
-  width: 100%;
-  height: 12rem;
-  padding: 0 0 1rem 15rem;
-
-  display: flex;
-  justify-content: start;
-  align-items: end;
-
-  background-color: var(--clr-primary);
-  color: var(--clr-white-900);
-}
-
-.offer-title {
-  text-align: center;
-  font-size: 10rem;
-  letter-spacing: 1;
-  line-height: 0.7;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-ul {
-  list-style: none;
-}
-
-.offer-item__box {
-  width: 100%;
-  height: 14rem;
-
-  display: grid;
-  grid-template-columns: 10rem 1fr 10rem;
-  align-items: end;
-  justify-content: center;
-
-  padding: 1rem 0 0 0;
-
-  color: var(--clr-primary);
-
-  transition: all 0.1s;
-  cursor: pointer;
-}
-
-.offer-item {
-  padding-left: 5rem;
-}
-
-.offer-work {
-  font-size: 6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.icon-cross {
-  justify-self: center;
-
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
-
-  height: 4rem;
-  width: auto;
-  fill: var(--clr-primary);
-
-  transform: rotate(45deg);
-  transition: all 0.2s;
-  margin-bottom: 3rem;
-}
-
-.offer-more {
-  display: grid;
-  grid-template-columns: 10rem 1fr 10rem;
-  grid-template-rows: 0fr;
-  justify-content: start;
-
-  transition: all 0.2s;
-  padding-left: 5rem;
-}
-/* ///////////////////////////////////////////////////// */
-
-.offer-open {
-  grid-template-rows: 1fr;
-}
-.cross-1__close {
-  transform: rotate(90deg);
-}
-.cross-2__close {
-  transform: rotate(0deg);
-}
-
-/* ///////////////////////////////////////////////////// */
-
-.offer-more__desc {
-  grid-column: 2/3;
-  justify-self: start;
-  overflow: hidden;
-  font-size: 1.5rem;
-  padding: 0 2rem;
-  max-width: 80rem;
-  border-left: 0.1rem solid var(--clr-white-900);
-  text-transform: uppercase;
-  transition: all 0.4s;
-}
-
-.add-padding {
-  padding: 1rem 2rem;
-}
-
 /* *********************************** */
 /* REALIZATIONS */
 /* *********************************** */
@@ -615,6 +502,118 @@ ul {
 
 .full-size {
   width: 100%;
+}
+/* *************************** */
+/* OFFER */
+/* *************************** */
+
+.offer-title__box {
+  width: 100%;
+  height: 12rem;
+  padding: 0 0 1rem 15rem;
+
+  display: flex;
+  justify-content: start;
+  align-items: end;
+
+  background-color: var(--clr-primary);
+  color: var(--clr-white-900);
+}
+
+.offer-title {
+  text-align: center;
+  font-size: 10rem;
+  letter-spacing: 1;
+  line-height: 0.7;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+.offer-item__box {
+  width: 100%;
+  height: 14rem;
+
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+  align-items: end;
+  justify-content: center;
+
+  padding: 1rem 0 0 0;
+
+  color: var(--clr-primary);
+
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.offer-item {
+  padding-left: 5rem;
+}
+
+.offer-work {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.icon-cross {
+  justify-self: center;
+
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+
+  height: 4rem;
+  width: auto;
+  fill: var(--clr-primary);
+
+  transform: rotate(45deg);
+  transition: all 0.2s;
+  margin-bottom: 3rem;
+}
+
+.offer-more {
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+  grid-template-rows: 0fr;
+  justify-content: start;
+
+  transition: all 0.2s;
+  padding-left: 5rem;
+}
+/* ///////////////////////////////////////////////////// */
+
+.offer-open {
+  grid-template-rows: 1fr;
+}
+.cross-1__close {
+  transform: rotate(90deg);
+}
+.cross-2__close {
+  transform: rotate(0deg);
+}
+
+/* ///////////////////////////////////////////////////// */
+
+.offer-more__desc {
+  grid-column: 2/3;
+  justify-self: start;
+  overflow: hidden;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  max-width: 80rem;
+  border-left: 0.1rem solid var(--clr-white-900);
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+
+.add-padding {
+  padding: 1rem 2rem;
 }
 
 /* ********************************* */

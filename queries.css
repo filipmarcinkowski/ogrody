@@ -1,5 +1,6 @@
 /* 1500px */
 @media (max-width: 93em) {
+  /* HERO */
   .hero__title {
     font-size: 12rem;
   }
@@ -58,6 +59,8 @@
     font-size: 3rem;
   }
 
+  /* CONTACT */
+
   .contact-title__box {
     height: 15vh;
   }
@@ -71,6 +74,8 @@
     font-size: 0.9rem;
   }
 
+  /* FOOTER */
+
   .footer {
     font-size: 1.5rem;
   }
@@ -83,10 +88,6 @@
 /* 1024 px */
 @media (max-width: 64em) {
   /* MARGINS */
-
-  .margin-b__l {
-    margin-bottom: var(--margin-m);
-  }
   .margin-b__ml {
     margin-bottom: var(--margin-ms);
   }
@@ -96,13 +97,8 @@
   .margin-b__ms {
     margin-bottom: var(--margin-s);
   }
-  .margin-b__s {
-    margin-bottom: var(--margin-xs);
-  }
-  .margin-b__xs {
-    margin-bottom: var(--margin-xs);
-  }
 
+  /* HERO */
   .hero__title {
     font-size: 8rem;
   }
@@ -194,8 +190,16 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .contact-item__link-num {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
   .contact-item__link {
     margin-bottom: 0;
+    /* ////// */
+    gap: 2rem;
+    /* ////// */
   }
   .contact-item__desc {
     height: 3rem;
@@ -203,10 +207,10 @@
   }
 
   .contact-item__desc-right {
-    margin-left: 9rem;
+    margin-left: 7rem;
   }
   .contact-item__desc-left {
-    margin-right: 9rem;
+    margin-right: 7rem;
   }
 
   .contact-item__icon-box {
@@ -270,31 +274,51 @@
 
 /* 800px */
 @media (max-width: 50em) {
-  /* .hero__title {
-    font-size: 8rem;
+  /* HERO */
+  .box {
+    max-width: 60rem;
+  }
+  .hero__title {
+    font-size: 6.4rem;
+  }
+  .hero__title-desc {
+    /* display: none; */
+    padding-top: 1.8rem;
+    font-size: 1rem;
   }
 
-  .num__circle-number {
-    font-size: 8rem;
+  /* ABOUT */
+  .numbers__container {
+    gap: 2rem;
+    grid-template-columns: 1fr;
   }
-
-  .num__circle-desc {
-    font-size: 1.8rem;
+  .num__box {
+    padding: 3rem 2rem;
+  }
+  .num__circle-init {
+    margin-top: 1rem;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  .num__circle-desc {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
-  .main-title {
-    letter-spacing: 3rem;
-    font-size: 2.5rem;
-  }
-
-  .main-title__box {
-    height: 15rem;
-  }
+  /* REALIZATIONS */
   .main-title__box-desc {
+    letter-spacing: 1rem;
     font-size: 22rem;
-  } */
+  }
+  .main-title {
+    letter-spacing: 2rem;
+    font-size: 1.5rem;
+  }
+
+  /* OFFER */
+  .offer-work {
+    font-size: 1.8rem;
+  }
 }
