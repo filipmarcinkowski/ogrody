@@ -63,10 +63,6 @@
 
   /* CONTACT */
 
-  .contact-title__box {
-    height: 15vh;
-  }
-
   .contact-item__link-num {
     font-size: 2rem;
     font-weight: 700;
@@ -158,6 +154,10 @@
 
   /* REALIZATIONS */
 
+  .main-title__box {
+    height: 15rem;
+  }
+
   .main-title {
     letter-spacing: 2.5rem;
     font-size: 2rem;
@@ -225,7 +225,7 @@
   }
 
   /* MOBILE NAV */
-
+  /* //////////////////////////////////// */
   /* .btn__mobile-nav {
     display: block;
     z-index: 10;
@@ -257,6 +257,7 @@
     transition: all 0.6s;
   } */
 
+  /* //////////////////////////////////// */
   /* /////////////////////////////////////// */
 
   /* for body */
@@ -310,6 +311,7 @@
   }
 
   /* REALIZATIONS */
+
   .main-title__box-desc {
     letter-spacing: 1rem;
     font-size: 22rem;
@@ -342,20 +344,62 @@
     height: 2rem;
   }
 
+  .offer-more {
+    grid-template-columns: 5.5rem 1fr 5.5rem;
+    padding-left: 0;
+  }
+
   /* CONTACT */
 
   .contact {
-    height: auto;
+    height: 100%;
+    margin-bottom: 3rem;
   }
   .contact-wings {
     height: auto;
     display: grid;
     /* justify-content: center; */
     align-items: center;
-    gap: 4rem;
+    gap: 0;
     grid-template-columns: 1fr;
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
   }
+
+  .contact-title__box {
+    margin-bottom: 2rem;
+  }
+
+  .contact-item__desc {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    height: 2rem;
+  }
+
+  .contact-item__box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-item__order-1 {
+    order: 2;
+  }
+
+  .contact-item__link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .contact-item__desc-right {
+    margin-left: 0;
+  }
+  .contact-item__desc-left {
+    margin-right: 0;
+  }
+
   .left {
     justify-content: start;
     justify-items: start;
@@ -372,5 +416,104 @@
 
   .contact-item__link {
     flex-direction: row-reverse;
+  }
+}
+
+/* 600px */
+@media (max-width: 37.5em) {
+  /* HERO */
+  .box {
+    margin-bottom: -10vh;
+  }
+  .hero__title {
+    font-size: 4.5rem;
+  }
+  .hero__title-desc {
+    display: none;
+  }
+  /* ABOUT */
+  h3 {
+    /* margin: 0 2rem; */
+  }
+  /* REALIZATIONS */
+
+  .main-title__box {
+    height: 10rem;
+  }
+  .main-title__box-desc {
+    letter-spacing: 0;
+    font-size: 15rem;
+  }
+  .t-1 {
+    display: none;
+  }
+  .t-2 {
+    display: block;
+  }
+
+  .image-desc__desc {
+    font-size: 1rem;
+    margin: 0;
+  }
+  /* OFFER */
+
+  .offer-item__box {
+    grid-template-columns: 5rem 1fr 5rem;
+    height: 8rem;
+  }
+  .offer-work {
+    font-size: 1.4rem;
+  }
+  .icon-cross {
+    height: 1.6rem;
+  }
+  .offer-more {
+    grid-template-columns: 4rem 1fr 4rem;
+    padding-left: 0;
+  }
+  .offer-more__desc {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    max-width: 80rem;
+    /* margin-bottom: 1rem; */
+  }
+
+  /* CONTACT */
+
+  .contact-item__link {
+    gap: 2rem;
+  }
+  .contact-item__link-num {
+    font-size: 1.5rem;
+  }
+}
+
+/* 456px */
+@media (max-width: 28.5em) {
+  /* HERO */
+  .box {
+    max-width: 38rem;
+  }
+  .hero__title {
+    font-size: 4rem;
+  }
+}
+/* 352px */
+@media (max-width: 22em) {
+  /* HEADER */
+  .logo__link {
+    height: 8rem;
+    padding: 0 2rem;
+  }
+  .comp-name {
+    font-size: 2.5rem;
+    letter-spacing: 0.8rem;
+  }
+  /* HERO */
+  .box {
+    max-width: 38rem;
+  }
+  .hero__title {
+    font-size: 4rem;
   }
 }
