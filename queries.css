@@ -181,15 +181,18 @@
     align-items: center; */
     justify-content: start;
     height: 5rem;
+    padding: 0 2rem;
   }
 
   .image-desc__num {
     text-align: start;
+    /* transition: width 0s; */
   }
 
   .full-size {
     height: 80vh;
   }
+
   /* OFFER */
 
   .offer-work {

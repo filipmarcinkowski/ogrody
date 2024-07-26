@@ -16,17 +16,22 @@ const imageBox = document.querySelectorAll('.image-box');
 const offerBox = document.querySelectorAll('.offer-item__container');
 
 const hideImage = function (box) {
+  const imageNum = box.querySelector('.image-desc__num');
   const imageDesc = box.querySelector('.image-desc__desc');
   box.classList.remove('full-size');
+  imageNum.classList.remove('num-size');
   imageDesc.classList.remove('show__desc');
 };
 
 // REALIZATIONS images OPEN / CLOSE FUNCTIONALITY
 const showImage = function (i) {
+  const imageNum = i.querySelector('.image-desc__num');
   const imageDesc = i.querySelector('.image-desc__desc');
   const findImage = function () {
     imageBox.forEach(hideImage);
+
     i.classList.add('full-size');
+    imageNum.classList.add('num-size');
     imageDesc.classList.add('show__desc');
   };
   i.addEventListener('click', findImage);

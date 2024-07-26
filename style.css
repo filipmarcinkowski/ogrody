@@ -452,6 +452,20 @@ h4 {
   flex-wrap: nowrap;
   color: var(--clr-white-900);
   /* overflow: hidden; */
+  padding: 2rem 0;
+}
+
+.image-desc__num {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  /* margin: 2rem; */
+}
+
+/* when 'image-desc__num' open */
+.num-size {
+  width: 5rem;
 }
 
 .image-desc__desc {
@@ -470,14 +484,6 @@ h4 {
   white-space: nowrap;
   overflow: hidden;
   /* /////////////////////////////////// */
-}
-
-.image-desc__num {
-  text-align: center;
-  width: 100%;
-  font-size: 2rem;
-  font-weight: 700;
-  /* margin: 2rem; */
 }
 
 /* .image-box:hover {
