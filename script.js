@@ -67,13 +67,44 @@ const body = document.querySelector('.body');
 const navList = document.querySelector('.nav__list');
 const addBg = document.querySelector('.mobile__nav-background');
 
-btnBox.addEventListener('click', function () {
-  // mobileNav.classList.toggle('show__menu');
-  body.classList.toggle('show__menu-b');
-  navList.classList.toggle('show__nav-list');
-  addBg.classList.toggle('show__menu');
-  // if (mobileNav.classList.contains('show__menu')) {
-  // }
-});
+// btnBox.addEventListener('click', function () {
 
-if()
+//   body.classList.toggle('show__menu-b');
+//   navList.classList.toggle('show__nav-list');
+//   addBg.classList.toggle('show__menu');
+
+// });
+
+const openMobileMenu = function () {
+  body.classList.add('show__menu-b');
+  navList.classList.add('show__nav-list');
+  addBg.classList.add('show__menu');
+};
+const closeMobileMenu = function () {
+  body.classList.remove('show__menu-b');
+  navList.classList.remove('show__nav-list');
+  addBg.classList.remove('show__menu');
+};
+
+const mobileMenu = function () {
+  if (navList.classList.contains('show__nav-list')) {
+    closeMobileMenu();
+  } else {
+    openMobileMenu();
+  }
+};
+
+btnBox.addEventListener('click', mobileMenu);
+// /////////////////////////////////////////////////
+
+const sectionLink = document.querySelectorAll('.nav__link');
+
+const goToLink = function (i) {
+  i.addEventListener('click', function () {
+    if (navList.classList.contains('show__nav-list')) {
+      closeMobileMenu();
+    }
+  });
+};
+
+sectionLink.forEach(goToLink);
