@@ -465,7 +465,7 @@ h4 {
 
 /* when 'image-desc__num' open */
 .num-size {
-  width: 5rem;
+  width: 8rem;
 }
 
 .image-desc__desc {
@@ -641,6 +641,7 @@ ul {
 /* ********************************* */
 .contact {
   height: 80vh;
+  margin: 0 2rem;
 }
 .contact-title__box {
   height: 15vh;
@@ -657,7 +658,7 @@ ul {
   align-items: center;
   gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
 }
 .contact-wing__left,
 .contact-wing__right {

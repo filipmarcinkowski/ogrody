@@ -15,6 +15,7 @@
 const imageBox = document.querySelectorAll('.image-box');
 const offerBox = document.querySelectorAll('.offer-item__container');
 
+// REALIZATIONS images OPEN / CLOSE FUNCTIONALITY
 const hideImage = function (box) {
   const imageNum = box.querySelector('.image-desc__num');
   const imageDesc = box.querySelector('.image-desc__desc');
@@ -23,7 +24,6 @@ const hideImage = function (box) {
   imageDesc.classList.remove('show__desc');
 };
 
-// REALIZATIONS images OPEN / CLOSE FUNCTIONALITY
 const showImage = function (i) {
   const imageNum = i.querySelector('.image-desc__num');
   const imageDesc = i.querySelector('.image-desc__desc');
@@ -75,3 +75,5 @@ btnBox.addEventListener('click', function () {
   // if (mobileNav.classList.contains('show__menu')) {
   // }
 });
+
+if()
