@@ -97,7 +97,7 @@ const mobileMenu = function () {
 btnBox.addEventListener('click', mobileMenu);
 // /////////////////////////////////////////////////
 
-const sectionLink = document.querySelectorAll('.nav__link');
+const linkSection = document.querySelectorAll('.nav__link');
 
 const goToLink = function (i) {
   i.addEventListener('click', function () {
@@ -107,4 +107,4 @@ const goToLink = function (i) {
   });
 };
 
-sectionLink.forEach(goToLink);
+linkSection.forEach(goToLink);
