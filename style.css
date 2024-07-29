@@ -497,7 +497,7 @@ h4 {
   /* margin: 2rem; */
   /* flex-wrap: nowrap; */
 
-  transition: width 3s ease, opacity 3s ease;
+  transition: opacity 3s ease;
 
   /* /////////////////////////////////// */
   white-space: nowrap;
@@ -505,15 +505,6 @@ h4 {
   /* /////////////////////////////////// */
 }
 
-/* .image-box:hover {
-  align-items: end;
-} */
-/* //////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////// */
-/* .image-box:hover .image-desc__desc {
-  opacity: 100;
-  width: 100%;
-} */
 .show__desc {
   opacity: 100;
   width: 100%;
@@ -524,16 +515,6 @@ h4 {
 .image-box__1 {
   width: 100%;
 }
-
-/* .image-box:hover {
-  width: 1fr;
-} */
-
-/* .image-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 .full-size {
   width: 100%;
