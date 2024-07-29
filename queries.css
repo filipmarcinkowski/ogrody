@@ -85,6 +85,11 @@
 
 /* 1024 px */
 @media (max-width: 64em) {
+  /* //////////////// */
+  /* .nav.no-scroll {
+    margin-right: 1.7rem; 
+  } */
+  /* //////////////// */
   /* MARGINS */
   .margin-b__ml {
     margin-bottom: var(--margin-ms);

@@ -14,6 +14,14 @@
 
 const imageBox = document.querySelectorAll('.image-box');
 const offerBox = document.querySelectorAll('.offer-item__container');
+const btnBox = document.querySelector('.btn__mobile-nav');
+const body = document.querySelector('.body');
+const navList = document.querySelector('.nav__list');
+const addBg = document.querySelector('.mobile__nav-background');
+const iconOpen = document.querySelector('.menu-open');
+const iconClose = document.querySelector('.menu-close');
+const linkSection = document.querySelectorAll('.nav__link');
+// const header = document.querySelector('.header');
 
 // REALIZATIONS images OPEN / CLOSE FUNCTIONALITY
 const hideImage = function (box) {
@@ -61,29 +69,38 @@ offerBox.forEach(showDesc);
 
 // MOBILE NAVIGATION
 
-const btnBox = document.querySelector('.btn__mobile-nav');
+// const iconMobileMenu = document.querySelectorAll('.btn__mobile-nav__icon-menu');
 
-const body = document.querySelector('.body');
-const navList = document.querySelector('.nav__list');
-const addBg = document.querySelector('.mobile__nav-background');
+// const isOpen = function (i) {
+//   i.classList.toggle('.hidden');
+// };
 
-// btnBox.addEventListener('click', function () {
+const isOpen = function () {
+  if (iconClose.classList.contains('hidden')) {
+    iconOpen.classList.add('hidden');
+    iconClose.classList.remove('hidden');
 
-//   body.classList.toggle('show__menu-b');
-//   navList.classList.toggle('show__nav-list');
-//   addBg.classList.toggle('show__menu');
-
-// });
+    // iconClose.style.marginRight = '1.7rem';
+  } else {
+    iconOpen.classList.remove('hidden');
+    iconClose.classList.add('hidden');
+  }
+};
 
 const openMobileMenu = function () {
   body.classList.add('show__menu-b');
   navList.classList.add('show__nav-list');
   addBg.classList.add('show__menu');
+  body.style.marginRight = '4.2rem';
+
+  isOpen();
 };
 const closeMobileMenu = function () {
   body.classList.remove('show__menu-b');
   navList.classList.remove('show__nav-list');
   addBg.classList.remove('show__menu');
+  body.style.marginRight = '';
+  isOpen();
 };
 
 const mobileMenu = function () {
@@ -94,11 +111,6 @@ const mobileMenu = function () {
   }
 };
 
-btnBox.addEventListener('click', mobileMenu);
-// /////////////////////////////////////////////////
-
-const linkSection = document.querySelectorAll('.nav__link');
-
 const goToLink = function (i) {
   i.addEventListener('click', function () {
     if (navList.classList.contains('show__nav-list')) {
@@ -108,3 +120,23 @@ const goToLink = function (i) {
 };
 
 linkSection.forEach(goToLink);
+
+btnBox.addEventListener('click', mobileMenu);
+// /////////////////////////////////////////////////
+
+// WINDOW RESIZING
+const resolution = function () {
+  if (
+    navList.classList.contains('show__nav-list') &&
+    window.innerWidth > 1024
+  ) {
+    body.style.marginRight = '';
+  } else if (
+    navList.classList.contains('show__nav-list') &&
+    window.innerWidth <= 1024
+  ) {
+    body.style.marginRight = '4.2rem';
+  }
+};
+
+window.onresize = resolution;
