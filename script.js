@@ -21,7 +21,6 @@ const addBg = document.querySelector('.mobile__nav-background');
 const iconOpen = document.querySelector('.menu-open');
 const iconClose = document.querySelector('.menu-close');
 const linkSection = document.querySelectorAll('.nav__link');
-// const header = document.querySelector('.header');
 
 // REALIZATIONS images OPEN / CLOSE FUNCTIONALITY
 const hideImage = function (box) {
@@ -69,18 +68,10 @@ offerBox.forEach(showDesc);
 
 // MOBILE NAVIGATION
 
-// const iconMobileMenu = document.querySelectorAll('.btn__mobile-nav__icon-menu');
-
-// const isOpen = function (i) {
-//   i.classList.toggle('.hidden');
-// };
-
 const isOpen = function () {
   if (iconClose.classList.contains('hidden')) {
     iconOpen.classList.add('hidden');
     iconClose.classList.remove('hidden');
-
-    // iconClose.style.marginRight = '1.7rem';
   } else {
     iconOpen.classList.remove('hidden');
     iconClose.classList.add('hidden');
