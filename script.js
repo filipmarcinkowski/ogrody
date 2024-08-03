@@ -23,6 +23,23 @@ const iconClose = document.querySelector('.menu-close');
 const linkSection = document.querySelectorAll('.nav__link');
 // const header = document.querySelector('.header');
 
+// WINDOW RESIZING
+const resolution = function () {
+  if (
+    navList.classList.contains('show__nav-list') &&
+    window.innerWidth > 1024
+  ) {
+    body.style.marginRight = '';
+  } else if (
+    navList.classList.contains('show__nav-list') &&
+    window.innerWidth <= 1024
+  ) {
+    body.style.marginRight = '4.2rem';
+  }
+};
+
+window.onresize = resolution;
+
 // REALIZATIONS images OPEN / CLOSE FUNCTIONALITY
 const hideImage = function (box) {
   const imageNum = box.querySelector('.image-desc__num');
@@ -123,20 +140,3 @@ linkSection.forEach(goToLink);
 
 btnBox.addEventListener('click', mobileMenu);
 // /////////////////////////////////////////////////
-
-// WINDOW RESIZING
-const resolution = function () {
-  if (
-    navList.classList.contains('show__nav-list') &&
-    window.innerWidth > 1024
-  ) {
-    body.style.marginRight = '';
-  } else if (
-    navList.classList.contains('show__nav-list') &&
-    window.innerWidth <= 1024
-  ) {
-    body.style.marginRight = '4.2rem';
-  }
-};
-
-window.onresize = resolution;

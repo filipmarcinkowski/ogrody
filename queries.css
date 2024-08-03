@@ -85,10 +85,11 @@
 
 /* 1024 px */
 @media (max-width: 64em) {
-  /* //////////////// */
-  /* .nav.no-scroll {
-    margin-right: 1.7rem; 
+  /* body {
+    overflow-x: hidden;
   } */
+  /* //////////////// */
+
   /* //////////////// */
   /* MARGINS */
   .margin-b__ml {
