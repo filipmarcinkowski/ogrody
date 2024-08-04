@@ -180,6 +180,7 @@
     width: 100%;
     max-width: 100%;
     transition: all 1s;
+    background-position-x: center;
   }
 
   .image-desc__box {
