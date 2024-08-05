@@ -73,15 +73,16 @@ body {
 
 .header {
   width: 100%;
-  /* background-color: red; */
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  position: absolute;
+  position: relative;
+
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
 
   /* height: 10rem; */
   z-index: 10;
@@ -157,10 +158,10 @@ body {
   height: 5rem;
   width: auto;
 
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .nav__list {

@@ -21,23 +21,24 @@ const addBg = document.querySelector('.mobile__nav-background');
 const iconOpen = document.querySelector('.menu-open');
 const iconClose = document.querySelector('.menu-close');
 const linkSection = document.querySelectorAll('.nav__link');
+const html = document.getElementsByTagName('html');
 
 // WINDOW RESIZING
-const resolution = function () {
-  if (
-    navList.classList.contains('show__nav-list') &&
-    window.innerWidth > 1024
-  ) {
-    body.style.marginRight = '';
-  } else if (
-    navList.classList.contains('show__nav-list') &&
-    window.innerWidth <= 1024
-  ) {
-    body.style.marginRight = '4.2rem';
-  }
-};
+// const resolution = function () {
+//   if (
+//     navList.classList.contains('show__nav-list') &&
+//     window.innerWidth > 1024
+//   ) {
+//     body.style.marginRight = '';
+//   } else if (
+//     navList.classList.contains('show__nav-list') &&
+//     window.innerWidth <= 1024
+//   ) {
+//     body.style.marginRight = '4.2rem';
+//   }
+// };
 
-window.onresize = resolution;
+// window.onresize = resolution;
 
 // REALIZATIONS images OPEN / CLOSE FUNCTIONALITY
 const hideImage = function (box) {
@@ -97,17 +98,18 @@ const isOpen = function () {
 
 const openMobileMenu = function () {
   body.classList.add('show__menu-b');
+
   navList.classList.add('show__nav-list');
   addBg.classList.add('show__menu');
-  body.style.marginRight = '4.2rem';
 
   isOpen();
 };
 const closeMobileMenu = function () {
   body.classList.remove('show__menu-b');
+
   navList.classList.remove('show__nav-list');
   addBg.classList.remove('show__menu');
-  body.style.marginRight = '';
+
   isOpen();
 };
 
