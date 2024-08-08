@@ -55,7 +55,7 @@
 
   /* OFFER */
   .offer-item__box {
-    height: 10rem;
+    /* height: 10rem; */
   }
   .offer-work {
     font-size: 3rem;
@@ -177,6 +177,7 @@
   .image-box__bg,
   .image-box {
     height: 5rem;
+
     width: 100%;
     max-width: 100%;
     transition: all 1s;
@@ -373,7 +374,7 @@
 
   .offer-item__box {
     grid-template-columns: 6rem 1fr 6rem;
-    height: 8rem;
+    /* height: 8rem; */
   }
   .offer-item {
     padding-left: 0;
@@ -497,7 +498,7 @@
 
   .offer-item__box {
     grid-template-columns: 5rem 1fr 5rem;
-    height: 8rem;
+    /* height: 8rem; */
   }
   .offer-work {
     font-size: 1.4rem;
@@ -598,7 +599,7 @@
   }
   .offer-item__box {
     grid-template-columns: 3.5rem 1fr 3.5rem;
-    height: 7rem;
+    /* height: 7rem; */
   }
   .offer-work {
     font-size: 1.2rem;
