@@ -643,7 +643,7 @@ ul {
 /* CONTACT */
 /* ********************************* */
 .contact {
-  height: 80vh;
+  min-height: 80vh;
   margin: 0 2rem;
 }
 .contact-title__box {
