@@ -1,3 +1,13 @@
+/* 2600px */
+@media (min-width: 162.5em) {
+  .box {
+    max-width: 220rem;
+  }
+  .hero__title {
+    font-size: 24rem;
+  }
+}
+
 /* 1500px */
 @media (max-width: 93em) {
   /* HERO */
