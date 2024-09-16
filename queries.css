@@ -307,7 +307,7 @@
 /* ///////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* ***************************** */
-/* 1500px */
+/* 1488px */
 /* ***************************** */
 @media (max-width: 93em) {
   /* HERO */
@@ -369,7 +369,7 @@
     /* height: 10rem; */
   }
   .offer-work {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   /* CONTACT */
@@ -519,7 +519,7 @@
   /* OFFER */
 
   .offer-work {
-    font-size: 2.6rem;
+    font-size: 3.5rem;
   }
 
   /* CONTACT */
@@ -692,7 +692,7 @@
     padding-left: 0;
   }
   .offer-work {
-    font-size: 1.8rem;
+    font-size: 3.5rem;
   }
   .icon-cross {
     height: 2rem;
@@ -710,10 +710,10 @@
     margin-bottom: 3rem;
   }
   .contact-wings {
-    height: auto;
+    /* height: 100%; */
     display: grid;
     /* justify-content: center; */
-    align-items: center;
+    align-content: center;
     gap: 0;
     grid-template-columns: 1fr;
     /* margin: 0 2rem; */
@@ -813,10 +813,10 @@
     /* height: 8rem; */
   }
   .offer-work {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
   }
   .icon-cross {
-    height: 1.6rem;
+    height: 2rem;
   }
   .offer-more {
     grid-template-columns: 4rem 1fr 4rem;
@@ -914,10 +914,10 @@
     /* height: 7rem; */
   }
   .offer-work {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   .icon-cross {
-    height: 1.4rem;
+    height: 2rem;
   }
   .offer-more {
     grid-template-columns: 3.5rem 1fr 3.5rem;
