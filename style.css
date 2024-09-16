@@ -258,6 +258,9 @@ body {
 
 .container {
   max-width: 120rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   margin: 0 auto;
   padding-top: var(--margin-l);
   /* background-color: red; */
