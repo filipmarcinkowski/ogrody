@@ -1,14 +1,88 @@
+/* ***************************** */
 /* 2600px */
+/* ***************************** */
 @media (min-width: 162.5em) {
+  :root {
+    /* margins */
+
+    --margin-l: 25rem;
+    --margin-ml: 16rem;
+    --margin-m: 12rem;
+    --margin-ms: 8rem;
+    --margin-s: 3rem;
+
+    --margin-xs: 2rem;
+  }
+  /* HERO */
   .box {
     max-width: 220rem;
   }
   .hero__title {
     font-size: 24rem;
   }
+  .hero__title-desc {
+    font-size: 3rem;
+  }
+
+  .container {
+    max-width: 240rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 6rem;
+  }
+
+  h4 {
+    font-size: 4rem;
+  }
+  .numbers__container {
+    /* min-height: 100vh; */
+  }
+
+  .num__box {
+    padding: 20rem 4rem;
+  }
+  .num__circle-init {
+    font-weight: 400;
+    margin-top: 3rem;
+    font-size: 3rem;
+  }
+
+  .num__circle {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .num__circle-number {
+    font-size: 20rem;
+    /* line-height: 20rem; */
+  }
+
+  .num__circle-desc {
+    font-size: 4rem;
+  }
+}
+/* ***************************** */
+/* 3200px */
+/* ***************************** */
+@media (min-width: 200em) {
+  /* HERO */
+  .box {
+    max-width: 300rem;
+  }
+  .hero__title {
+    font-size: 30rem;
+  }
 }
 
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ***************************** */
 /* 1500px */
+/* ***************************** */
 @media (max-width: 93em) {
   /* HERO */
   .hero__title {
@@ -28,8 +102,9 @@
     margin-bottom: 0rem;
   }
 }
-
+/* ***************************** */
 /* 1233px */
+/* ***************************** */
 @media (max-width: 77em) {
   /* HERO */
   .hero__title {
