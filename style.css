@@ -344,10 +344,13 @@ h4 {
 /* REALIZATIONS */
 /* *********************************** */
 
+.section {
+  min-height: 100vh;
+}
+
 .realizations {
   display: grid;
-  /* width: 100vw; */
-  /* width: 100%; */
+
   grid-template-columns: 15rem 1fr 15rem;
 
   background-color: var(--clr-primary);

@@ -13,6 +13,22 @@
 
     --margin-xs: 2rem;
   }
+  /* HEADER */
+  .logo__link {
+    height: 15rem;
+    padding: 0 8rem;
+  }
+
+  .comp-name {
+    font-size: 5rem;
+  }
+
+  .nav {
+    padding: 0 8rem;
+  }
+  .nav__link {
+    font-size: 3rem;
+  }
   /* HERO */
   .box {
     max-width: 220rem;
@@ -38,9 +54,6 @@
   h4 {
     font-size: 4rem;
   }
-  .numbers__container {
-    /* min-height: 100vh; */
-  }
 
   .num__box {
     padding: 20rem 4rem;
@@ -58,13 +71,103 @@
 
   .num__circle-number {
     font-size: 20rem;
-    /* line-height: 20rem; */
   }
 
   .num__circle-desc {
     font-size: 4rem;
   }
+  /* REALIZATIONS */
+  .main-title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-title__box-desc {
+    display: none;
+  }
+
+  .main-title__box {
+    grid-column: 1/-1;
+    justify-items: center;
+    align-content: end;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 30rem;
+  }
+
+  .image-desc__num {
+    font-size: 3rem;
+  }
+
+  .image-desc__desc {
+    font-size: 2.5rem;
+  }
+  /* OFFER */
+  .offer-item__box {
+    grid-template-columns: 15rem 1fr 15rem;
+  }
+  .icon-cross {
+    height: 8rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .offer-work {
+    font-size: 10rem;
+
+    margin-bottom: 3rem;
+  }
+  .offer-more {
+    grid-template-columns: 15rem 1fr 15rem;
+  }
+  .offer-more__desc {
+    font-size: 2.5rem;
+    max-width: 200rem;
+  }
+  /* CONTACT */
+  .contact-wing__left,
+  .contact-wing__right {
+    font-size: 6rem;
+  }
+
+  .contact-item__link {
+    gap: 10rem;
+  }
+
+  .contact-item__link-num {
+    font-size: 6.5rem;
+  }
+  .contact-item__desc {
+    font-size: 2.5rem;
+  }
+  .contact-item__desc-right {
+    margin-left: 26rem;
+  }
+  .contact-item__desc-left {
+    margin-right: 26rem;
+  }
+
+  .contact-item__icon-box {
+    background-color: var(--clr-primary);
+    height: 16rem;
+    width: 16rem;
+  }
+
+  .contact-item__icon {
+    /* font-size: 6rem; */
+
+    height: 8rem;
+  }
+  /* FOOTER */
+  .footer-item__rights {
+    font-size: 3rem;
+  }
+  .footer-item__link-icon {
+    height: 4rem;
+  }
 }
+
 /* ***************************** */
 /* 3200px */
 /* ***************************** */
