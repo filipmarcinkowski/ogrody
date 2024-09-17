@@ -20,6 +20,7 @@ const navList = document.querySelector('.nav__list');
 const addBg = document.querySelector('.mobile__nav-background');
 const iconOpen = document.querySelector('.menu-open');
 const iconClose = document.querySelector('.menu-close');
+const header = document.querySelector('.header');
 const linkSection = document.querySelectorAll('.nav__link');
 const html = document.getElementsByTagName('html');
 
@@ -98,7 +99,7 @@ const isOpen = function () {
 
 const openMobileMenu = function () {
   body.classList.add('show__menu-b');
-
+  header.classList.add('header-fixed');
   navList.classList.add('show__nav-list');
   addBg.classList.add('show__menu');
 
@@ -106,7 +107,7 @@ const openMobileMenu = function () {
 };
 const closeMobileMenu = function () {
   body.classList.remove('show__menu-b');
-
+  header.classList.remove('header-fixed');
   navList.classList.remove('show__nav-list');
   addBg.classList.remove('show__menu');
 

@@ -565,9 +565,15 @@
   /* //////////////////////////////////// */
   /* //////////////////////////////////// */
 
-  /* .header {
+  .header {
     position: relative;
-  } */
+  }
+
+  .header-fixed {
+    position: fixed;
+
+    /* overflow-y: hidden; */
+  }
 
   .btn__mobile-nav {
     display: block;
