@@ -1,16 +1,4 @@
 'use strict';
-// const title = document.querySelector('.hero__title-inner');
-// const btnContact = document.querySelector('.contact-box');
-
-// const changeToWhite = function () {
-//   title.style.color = 'var(--clr-white-900)';
-// };
-// const changeToYellow = function () {
-//   title.style.color = 'var(--clr-secondary-1)';
-// };
-
-// btnContact.addEventListener('mouseover', changeToWhite);
-// btnContact.addEventListener('mouseout', changeToYellow);
 
 const imageBox = document.querySelectorAll('.image-box');
 const offerBox = document.querySelectorAll('.offer-item__container');
@@ -23,23 +11,7 @@ const iconClose = document.querySelector('.menu-close');
 const header = document.querySelector('.header');
 const linkSection = document.querySelectorAll('.nav__link');
 const html = document.getElementsByTagName('html');
-
-// WINDOW RESIZING
-// const resolution = function () {
-//   if (
-//     navList.classList.contains('show__nav-list') &&
-//     window.innerWidth > 1024
-//   ) {
-//     body.style.marginRight = '';
-//   } else if (
-//     navList.classList.contains('show__nav-list') &&
-//     window.innerWidth <= 1024
-//   ) {
-//     body.style.marginRight = '4.2rem';
-//   }
-// };
-
-// window.onresize = resolution;
+const footerBox = document.querySelector('.footer-items');
 
 // REALIZATIONS images OPEN / CLOSE FUNCTIONALITY
 const hideImage = function (box) {
@@ -135,3 +107,10 @@ linkSection.forEach(goToLink);
 btnBox.addEventListener('click', mobileMenu);
 // /////////////////////////////////////////////////
 // test
+
+// footer data
+
+const footerData = new Date().getFullYear();
+const footerHTML = `<p class="footer-item__rights">© ${footerData} <span> Buko</span></p>`;
+
+footerBox.insertAdjacentHTML('afterbegin', footerHTML);
